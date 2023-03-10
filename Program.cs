@@ -10,6 +10,7 @@ using System.Text.Unicode;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 //Cirilic HtmlEncoder HEX
 builder.Services.Configure<WebEncoderOptions>(options =>
 {
