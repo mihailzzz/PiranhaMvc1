@@ -60,10 +60,10 @@
                                 <h3>@post.Title</h3>
                                 <p class="post-meta">
                                     <span>
-                                        In <a href="@Model.Permalink/category/@post.Category.Slug">@post.Category.Title</a>
+                                        В категории <a href="@Model.Permalink/category/@post.Category.Slug">@post.Category.Title</a>
                                     </span>
                                     <span>
-                                        Tags
+                                        Теги
                                         @foreach (var tag in post.Tags)
                                         {
                                             <a href="@Model.Permalink/tag/@tag.Slug">#@tag.Slug</a>
@@ -72,7 +72,7 @@
                                     @if (post.IsPublished)
                                     {
                                         <span>
-                                            Published @post.Published.Value.ToShortDateString()
+                                            Публикация @post.Published.Value.ToShortDateString()
                                         </span>
                                     }
                                     @if (post.EnableComments && post.CommentCount > 0)
@@ -83,7 +83,7 @@
                                     }
                                 </p>
                                 <p>@Html.Raw(post.Excerpt)</p>
-                                <a href="@post.Permalink" class="btn btn-primary">Read more</a>
+                                <a href="@post.Permalink" class="btn btn-primary">Далее</a>
                             </header>
                         </article>
                     </div>
